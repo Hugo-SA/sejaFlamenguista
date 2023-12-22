@@ -1,0 +1,159 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    height: 100vh;
+}
+
+header{
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 10px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(255, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+    width: 500px;
+    height: 100%;
+
+}
+
+#inscreva-se-btn:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+h1{
+    font-weight: 200;
+    
+}
+ul{
+    text-align: center;
+    display: block;
+}
+ul li {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color: rgb(255, 0, 0);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+img{
+    width: 580px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+[type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color:  rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgb(255, 0, 0);
+}
+[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    transition: 0.4s;
+    border-color: white;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+.carousel-inner{
+    padding: 70px;
+    height: 70vh;
+    width: 120vh;
+}
+button {
+    height: 50px;
+    width: auto; /* Alteração aqui para permitir que o texto determine a largura */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgb(255, 0, 0);
+    box-sizing: border-box; /* Inclui a largura da borda no cálculo total da largura */
+    border-radius: 15px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    transition: 0.4s;
+}
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid white;
+    background-color:rgb(210, 103, 103);
+    border-radius: 5px;
+    font-size: 14px;
+}
+span2{
+    color: blue;
+}
+vermelho{
+    color:red;
+}
+titulo{
+    color:goldenrod
+}

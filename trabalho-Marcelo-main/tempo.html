@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo de Flamengo</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/fonts.css" rel="stylesheet">
+    <link href="styles/media.css" rel="stylesheet">
+</head>
+<body>
+    <ul>
+        <a href="index.html"><li>Início</li></a>
+        <a href="maracana.html"><li>Conheça o Flamengo</li></a>
+        <a href="tempo.html" id="inscreva-se-btn"><li>Descubra a quanto tempo você é Flamenguista</li></a>
+    </ul>
+    <h1>Você é flamenguista a quantos anos?</h1>
+
+    <label for="dob">Data de Nascimento:</label>
+    <input type="date" id="dob">
+
+    <button onclick="calcularIdade()">Calcular tempo</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularIdade() {
+            // Obtém a data de nascimento do elemento de entrada
+            var dataNascimento = document.getElementById("dob").value;
+
+            // Calcula a diferença em milissegundos entre a data atual e a data de nascimento
+            var diferenca = Date.now() - new Date(dataNascimento).getTime();
+
+            // Converte a diferença de milissegundos para anos e arredonda para baixo
+            var idade = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 365.25));
+            var idadeMeses = Math.floor((diferenca % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30.44));
+            var idadeDias = Math.floor((diferenca % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
+
+            // Exibe a idade na tela
+            document.getElementById("resultado").innerHTML = "Você é flamenguista a " + idade + " anos " + idadeMeses + " meses e " + idadeDias + " dias.";
+        }
+    </script>
+
+</body>
+</html>
